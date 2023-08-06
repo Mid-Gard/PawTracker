@@ -1,36 +1,37 @@
 # Paw Tracker
 
-Code submission for Technofest Hackathon
+## Introduction
 
-# Our Approach
+Paw Tracker is a comprehensive software solution designed for the Technofest Hackathon, addressing the pressing issue of managing and tracking stray animals in urban settlements. The aim of this project is to develop an efficient and user-friendly application that utilizes modern technologies to analyze the behavior of stray animals, facilitate adoptions, handle public reports, send emergency alerts, and provide valuable data insights.
 
-For convinience and to be avalable to most of the people we have used React which will create a React Web App which can be used by anyone across platform, and which further can be convrted to native React App. For backend we used Django.
+## Our Approach
 
-Assuming this is a solution for the government of the Urban region to monitor the movement and health of the stray animals (which will consist of Dogs, Cows, cat maybe). So the government will install this devices on this stray animals, and now the webapp will provide the status of all the stray animals in that region. The access to this webapp can be provided to the urban local to access and know the status of theier neighbouring animal and can take according descisions, if they want to adopt any of that anymal they can do so, by looking at what kind of animal is it, what breed, its health, etc. They can even then register on the same app, that they have adopted this animal.
+To ensure widespread accessibility and ease of use, we have chosen to implement a React.js frontend, creating a versatile web application that can be utilized across different platforms. Additionally, the application can be further converted into a native React app for seamless usage. For the backend, we have employed Django, a robust and scalable framework.
 
-This approach uses GPS technology to get like almost the precise details of the animals and also their health on the basis of the sensors attached on their body.
->But this doesnt look like a feasible approach if its to be implemented on a large scale of animals as lot of GPS and sensor devices will be required. This approach looks like a futuristic approach. Hence we suggest the following approach.
+So based on the problem statement, and what we have understood from it, we have assumed that this solution will be used by goverment as otherwise, no one else will be track stray animals. Secondly we have assumed that the sensors is used to track the health of the animals for their wellbeing. On the basis of this we have proposed following appraches to  solve this problem, out of which only one first one is implemented due to time constraints but the second approach is within our reach to implement : 
 
-### Second Approach
+### First Approach : GPS and Sensors
+We envision this solution as a valuable tool for local governments to monitor the movement and health of stray animals, which may include dogs, cows, and cats. The government can install tracking devices on these animals, and the web application will then provide real-time status updates for all the stray animals in the region. The public can access this web application to check the status of animals in their vicinity, make informed decisions regarding any injured animals nearby, and even consider adopting these animals based on crucial information such as breed and health. Furthermore, individuals can register on the app to notify others about the animals they have adopted.
 
-This approach of monitoring through CCTV camera and openCV for tracking and Thermal cameras can be used for getting like little bit information about their health. Now this wont give very accurate data like GPS approach, but it can solve quite few problems, like tracking the animals in a specific area, if any animal is dead from thermal cameras, etc.
+>But this approach looks like a futuristic. While the GPS technology-based approach can offer precise details about the animals' movements and health, it may not be feasible for large-scale implementation due to the need for numerous GPS and sensor devices. Hence, we propose an alternative approach:
 
+### Second Approach : OpenCV and Sensors
 
+In this approach, we leverage CCTV cameras and OpenCV for tracking, as well as thermal cameras to gather some information about the animals' health. While this approach may not provide the same level of accuracy as the GPS-based approach, it can still address several key challenges, including tracking animals in specific areas and detecting deceased animals using thermal cameras.
 
-## TODO : Features to Add
+## How to Use
 
-Besides the map, the following features needs to be added in the app :
+1. Clone the project: `git clone https:\\`
+2. Navigate to the backend folder: `cd BackEnd`
+3. Install the required packages: `npm i`
+4. Run the server to collect and process data: `python manage.py runserver`
+5. Open another terminal and go to the Frontend folder: `cd FrontEnd`.
+6. Install the necessary Python packages: `pip install -r requirements.txt`
+7. Run the frontend server: `npm start`
 
-- The map should auto resize when even a single animal goes out of the screen.
-- There should be an autoscroll animation for sidebar, for usable on any resolution screen.
+## TODO: Features to Add
 
+In addition to the map, several important features need to be incorporated into the application:
 
-## How to use
-
-1. Clone the project : ```git clone https:\\```
-2. Go into the backend folder : ```cd BackEnd```
-3. Install the packages : ```npm i```
-4. Run the server to collect and process the data : ```python manage.py runserver```
-4. Open another terminal and go in the Frontend folder : ```cd FrontEnd```.
-5. Install the python packages : ```pip install -r requirements.txt```
-6. Run the frontend server : ```npm start```
+- Implement auto-resize functionality for the map to ensure seamless display even when animals move out of the visible screen area.
+- Add an autoscroll animation for the sidebar to optimize the user experience on various screen resolutions.

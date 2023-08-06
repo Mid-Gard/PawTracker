@@ -51,14 +51,14 @@ def bus_incampus(request):
         {
             "id": 1,
             "busNumber": f"ABC{random.randint(100,999)}",
-            "departureTime": f"{random.randint(1,12)}:{random.randint(10,59)} {random.choice(['AM', 'PM'])}",
-            "arrivalTime": f"{random.randint(1,12)}:{random.randint(10,59)} {random.choice(['AM', 'PM'])}",
+            "departureTime": f"({random.uniform(1.0000, 12.0000):.4f}, {random.uniform(1.0000, 12.0000):.4f})",
+            "arrivalTime": f"{random.randint(1,12)},{random.randint(10,59)} {random.choice(['AM', 'PM'])}",
             "Status":status
         },
         {
             "id": 2,
             "busNumber": f"XYZ{random.randint(100,999)}",
-            "departureTime": f"{random.randint(1,12)}:{random.randint(10,59)} {random.choice(['AM', 'PM'])}",
+"departureTime": f"({random.uniform(1.0000, 12.0000):.4f}, {random.uniform(1.0000, 12.0000):.4f})",
             "arrivalTime": f"{random.randint(1,12)}:{random.randint(10,59)} {random.choice(['AM', 'PM'])}",
             "Status":status
         }

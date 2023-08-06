@@ -1,6 +1,7 @@
 
 .venv/
 
+TempCodes/
 db.sqlite3
 
 backend/__pycache__/

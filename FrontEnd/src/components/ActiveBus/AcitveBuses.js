@@ -22,7 +22,7 @@ function ActiveBuses({ title }) {
       const data = await response.json();
       const busList = data.map((bus) => (
         <div className="subline" key={bus.id}>
-          <p>GPS No.: {bus.busNumber}</p>
+          <p>Device ID: {bus.busNumber}</p>
           <p>Location : {bus.departureTime}</p>
           <p>Time been Inactive : {bus.arrivalTime}</p>
           <p>Status : {bus.Status}</p>
