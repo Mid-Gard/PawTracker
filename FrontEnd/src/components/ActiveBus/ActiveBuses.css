@@ -1,0 +1,67 @@
+/* I am writting the css for this in the respective pages css
+
+But the original css is there in the file : tempActiveBuses.css
+
+Oh one thing you thought is to put this in the App.js then you have to write css, ask chatgpt this will be cool.
+or see the earlier layout when you had "write your code here"
+
+Second option, change the layout in homw.js such that it matches like that in drivers.js
+*/
+
+
+.sidebar-background {
+    background-color: rgb(66, 28, 100);
+    color: aliceblue;
+    width: 100%;
+    border-radius: 5%;
+    height: calc(100vh - 83px);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    overflow-x: hidden;
+
+}
+
+.sidebar {
+    position: sticky;
+    width: 104%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    overflow-y: auto;
+    /* add this */
+}
+
+.grid {
+    margin-bottom: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.subline {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: rgb(74, 233, 233);
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.subline p {
+    margin: 0;
+    font-size: 1.2em;
+    color: rgb(58, 240, 240);
+}

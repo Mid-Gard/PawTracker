@@ -1,0 +1,61 @@
+.sidebar-background {
+    background-color: rgb(66, 28, 100);
+    color: aliceblue;
+    width: 20%;
+    border-radius: 5%;
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    z-index: 5;
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+}
+
+.sidebar {
+    position: sticky;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    color: rgb(255, 255, 255);
+    overflow-y: auto;
+    /* add this */
+}
+
+.grid {
+    margin-bottom: 20px;
+    padding-top: 10%;
+    display: grid;
+    gap: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: aliceblue;
+}
+
+.subline {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    color: aqua;
+    border-radius: 5px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+
+.subline p {
+    margin: 0;
+    font-size: 1.2em;
+    color: aliceblue;
+}
+
+p {
+    font-size: 1.5em;
+    color: aliceblue;
+}
