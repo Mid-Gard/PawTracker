@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Header from "./components/Header/Header";
 import Home from "./components/Home/Home";
-import Drivers from "./components/Drivers/Drivers";
-import Buses from "./components/Buses/Buses";
+import Drivers from "./components/Data/Data";
+import Buses from "./components/Adopt/Adopt";
 import ActiveBuses from "./components/ActiveBus/AcitveBuses";
 
 import "./App.css";

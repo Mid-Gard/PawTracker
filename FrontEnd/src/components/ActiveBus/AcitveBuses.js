@@ -8,6 +8,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircle from "@mui/icons-material/AccountCircle";
 import MenuItem from "@mui/material/MenuItem";
 import Menu from "@mui/material/Menu";
+import { Link } from "react-router-dom";
 
 import "./ActiveBuses.css";
 
@@ -49,20 +50,28 @@ function ActiveBuses({ title }) {
     <div className="sidebar-background">
       <div className="sidebar">
         <div className="grid">
-          <h2>Non-Active</h2>
+          <h2>Critical</h2>
           {busList}
-          {busList}
+          <Link to="/drivers" className="nav-link">
+            See more ...
+          </Link>
         </div>
 
         <hr></hr>
         <div className="grid">
           <h2>Injured</h2>
           {busList}
+          <Link to="/drivers" className="nav-link">
+            See more ...
+          </Link>
         </div>
         <hr></hr>
         <div className="grid">
-          <h2>Critical</h2>
+          <h2>Non-Active</h2>
           {busList}
+          <Link to="/drivers" className="nav-link">
+            See more ...
+          </Link>
         </div>
       </div>
     </div>

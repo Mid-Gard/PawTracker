@@ -86,6 +86,6 @@ I have created 4 apps
 
 - location
 - driver_details
-- bus_details
+- animal_details
 - login_details
 Follow the tutorials and write the logic in these apps
